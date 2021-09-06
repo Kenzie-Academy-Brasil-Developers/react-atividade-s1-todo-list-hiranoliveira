@@ -10,7 +10,7 @@ function App() {
     setList([...list, newTodo]);
   };
   const handleTodo = (word) => {
-    const filterList = list.filter((item) => item != word);
+    const filterList = list.filter((item) => item !== word);
     setList(filterList);
     console.log(list);
   };
