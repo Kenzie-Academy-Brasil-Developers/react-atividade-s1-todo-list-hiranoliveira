@@ -12,6 +12,7 @@ function App() {
   const handleTodo = (word) => {
     const filterList = list.filter((item) => item != word);
     setList(filterList);
+    console.log(list);
   };
   return (
     <div className="App">

@@ -6,7 +6,7 @@ const TodoList = ({ list, handleTodo }) => {
           {list.map((item, index) => (
             <li key={index}>
               {item}
-              <button onClick={() => handleTodo(list)}>Concluir tarefa</button>
+              <button onClick={() => handleTodo(item)}>Concluir tarefa</button>
             </li>
           ))}
         </ul>
